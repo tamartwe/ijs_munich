@@ -1,5 +1,6 @@
 const LIMIT = 10000000;
-const arr = new Int32Array(LIMIT);
+const buffer = new ArrayBuffer(LIMIT * 4);
+const arr = new Int32Array(buffer);
 console.time("TypedArray insertion time");
 for (let i = 0; i < LIMIT ; i++ ) {
     arr[i] = i;

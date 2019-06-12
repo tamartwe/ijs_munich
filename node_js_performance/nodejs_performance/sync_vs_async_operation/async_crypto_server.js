@@ -11,7 +11,8 @@ const router = express.Router();
 const hashPassword = async (password) => {
   return new Promise((resolve, rejected) => {
     const salt = crypto.randomBytes(128).toString('base64');
-    const hash = crypto.pbkdf2(password, salt, 10000, 512, 'sha512', (error, hash) => {
+    const hash = crypto.pbkdf2(password, 
+      salt, 10000, 512, 'sha512', (error, hash) => {
         resolve(hash);
      });
   });
