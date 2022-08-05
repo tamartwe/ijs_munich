@@ -12,6 +12,6 @@
     "child_process": "^1.0.2",
     "express": "^4.16.3",
     "express-rate-limit": "^3.1.0",
-    "mongoose": "^5.2.9"
+    "mongoose": "^5.7.5"
   }
 }
